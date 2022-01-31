@@ -3,8 +3,98 @@
 }
 body{
     font-family: 'Barlow', sans-serif;
+    margin: auto;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,.contact-btn{
     font-family: 'Fraunces', serif;
+}
+h1,.top a, .contact-btn:hover{
+    color: hsl(0, 0%, 100%);  
+}
+header{
+    background-image: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    margin-top: -5%;
+    height:790px;
+    padding-top: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#navbar{
+overflow: hidden;
+}
+.top-logo{
+    margin-left: 7%;
+}
+.top{
+    display:block;
+    float:right; 
+    width:35%;
+}
+.top a{
+    text-decoration: none; 
+    padding:14px 16px;
+}
+.contact-btn{
+    padding:12px 14px;
+    margin-left: 5%;
+    width: 25%;
+    border-radius: 25px;
+    border-style: solid;
+    border:none;
+    background-color: hsl(0, 0%, 100%);
+}
+.contact-btn:hover{
+    background: rgba( 255, 255, 255, 0.25 );
+    border-radius: 25px;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.hamburger{
+    display: none;
+}
+#heading{
+    text-align: center;
+    margin-top: 8%;
+}
+h1{
+ font-size: 60px;
+ font-weight: 900;
+}
+
+
+@media (max-width:380px) {
+    header{
+        background-image: url("images/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-position: center; 
+        height:630px;
+        padding-top: 15%;      
+    }
+
+    .top a:not(:first-child){
+        display: none;
+    }
+    .top .hamburger{
+        float:right;
+        display: block;
+    }
+
+    .top.responsive{
+        position: relative;
+    }
+    .top.responsive .hamburger{
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    .top.responsive a{
+        float:none;
+        display: block;
+        text-align: center;
+    }
+    h1{
+        font-size: 48px;
+    }
 }
