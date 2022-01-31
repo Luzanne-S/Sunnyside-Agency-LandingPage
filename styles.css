@@ -6,7 +6,7 @@ body{
     margin: auto;
 }
 
-h1,h2,h3,h4,.contact-btn{
+h1,h2,h3,h4,.contact-btn,.learn-btn1,.learn-btn2{
     font-family: 'Fraunces', serif;
 }
 h1,.top a, .contact-btn:hover{
@@ -63,6 +63,84 @@ h1{
  font-weight: 900;
 }
 
+#transform,#stand-out{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    font-weight: 700;
+    font-size: 38px;
+    margin-top: -15%;
+}
+
+.stand-h2{
+    width:500px;
+}
+.transform-content{
+    display: block;
+    margin:auto;
+    width:27%;
+}
+.standout-content{
+    display: block;
+    margin:auto;
+    width:26%;  
+}
+.learn-btn1,.learn-btn2{
+    border:none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: -2%;
+}
+
+.learn-btn1:after {
+    background: none repeat scroll 0 0 hsla(51, 100%, 49%, 0.644);
+    margin:auto;
+    content: "";
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 110px;
+}
+
+.learn-btn2:after {
+    background: none repeat scroll 0 0 hsl(7, 99%, 70%);
+    margin:auto;
+    content: "";
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 110px;
+}
+.pink-img{
+    width:770px;
+    margin-top: -0.5%;
+}
+
+.egg-img{
+    width:750px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:380px) {
     header{
@@ -96,5 +174,44 @@ h1{
     }
     h1{
         font-size: 48px;
+    }
+    h2{
+        margin-top: 20%;
+    }
+    #transform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #stand-out{
+        display: flex;
+        flex-direction: column;
+    }
+    .pink-img,.egg-img{
+        width:372px;
+    }
+    .stand-h2{
+        width:350px;
+        text-align: center;
+        margin-left: -15%;
+    }
+    .transform-h2{
+        width:350px;
+        text-align: center; 
+        margin-left: -10%;
+    }
+    .transform-content{
+        width:80%;
+        text-align: center;
+    }
+    .standout-content{
+        width:75%;
+        text-align: center;
+    }
+    .learn-btn1,.learn-btn2{
+        margin-bottom: 20%;
+        margin-top: 5%;
+    }  
+    .stand-out-image,.transform-image{
+        width: 372px;
     }
 }
