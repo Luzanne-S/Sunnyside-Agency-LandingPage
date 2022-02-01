@@ -63,7 +63,7 @@ h1{
  font-weight: 900;
 }
 
-#transform,#stand-out,#gp-section,.testimonial-row{
+#transform,#stand-out,#gp-section,.testimonial-row,#images{
     display: flex;
     flex-direction: row;
 }
@@ -172,7 +172,7 @@ h2{
 }
 
 #testimonials{
-    height:600px;
+    height:520px;
     margin-top: 10%;
 }
 h4,small{
@@ -205,6 +205,11 @@ strong{
    margin-top: 10%;
 }
 
+.milk,.sugar,.cone,.orange{
+width: 392px;
+height:390px;
+margin-left: -1%;
+}
 
 
 
@@ -328,4 +333,16 @@ strong{
         width:80%;
         line-height: 1.7;
     }
+    .images-row{
+        display:grid;
+        grid-template-columns: auto auto ;
+        margin-top: 155%;
+    }
+    .milk,.sugar,.cone,.orange{
+        width: 175px;
+        height:150px;
+        display: block;
+        margin:auto;
+    
+ }
 }
