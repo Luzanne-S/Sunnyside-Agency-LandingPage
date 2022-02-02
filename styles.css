@@ -44,6 +44,7 @@ overflow: hidden;
     border-style: solid;
     border:none;
     background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 .contact-btn:hover{
     background: rgba( 255, 255, 255, 0.25 );
@@ -71,6 +72,7 @@ h2{
     font-weight: 700;
     font-size: 38px;
     margin-top: -15%;
+    color: hsl(212, 27%, 19%);
 }
 
 .stand-h2{
@@ -86,32 +88,54 @@ h2{
     margin:auto;
     width:26%;  
 }
+
+.transform-p,.stand-p{
+    color: hsl(213, 9%, 39%);
+    line-height: 1.6;
+}
 .learn-btn1,.learn-btn2{
     border:none;
     background-color: transparent;
     font-size: 15px;
     margin-top: 5%;
     margin-left: -2%;
+    cursor: pointer;
 }
 
+.learn-btn1:after,.learn-btn2:after{
+    margin:auto;
+    content: "";
+    display: block;
+    height: 10px;
+    position: relative;
+    margin-top: -5%;
+    width: 120px;
+    z-index: -1;
+    border-radius: 25px;
+}
 .learn-btn1:after {
-    background: none repeat scroll 0 0 hsla(51, 100%, 49%, 0.644);
+    background: none repeat scroll 0 0 hsla(51, 100%, 49%, 0.363); 
+}
+.learn-btn2:after {
+    background: none repeat scroll 0 0 hsla(7, 99%, 70%, 0.452);  
+}
+.learn-btn1:hover:after,.learn-btn2:hover:after{
     margin:auto;
     content: "";
     display: block;
     height: 10px;
     position: relative;
-    width: 110px;
+    margin-top: -6%;
+    width: 120px;
+    z-index: -1;
+    border-radius: 25px;  
+}
+.learn-btn1:hover:after {
+    background: none repeat scroll 0 0 hsl(51, 100%, 49%);
 }
 
-.learn-btn2:after {
-    background: none repeat scroll 0 0 hsl(7, 99%, 70%);
-    margin:auto;
-    content: "";
-    display: block;
-    height: 10px;
-    position: relative;
-    width: 110px;
+.learn-btn2:hover:after{
+    background: none repeat scroll 0 0  hsl(7, 99%, 70%);
 }
 .pink-img{
     width:770px;
@@ -206,7 +230,7 @@ strong{
 }
 
 .milk,.sugar,.cone,.orange{
-width: 392px;
+width: 392.5px;
 height:390px;
 margin-left: -1%;
 }
