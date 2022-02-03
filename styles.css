@@ -315,7 +315,7 @@ a .icon:hover path{
 }
 
 
-@media (max-width:400px) {
+@media (max-width:600px) {
     header{
         background-image: url("images/mobile/image-header.jpg");
         background-repeat: no-repeat;
