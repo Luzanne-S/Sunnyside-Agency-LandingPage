@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Sunnyside-screenshot.png)
+![](images/Sunnyside-screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(https://github.com/Luzanne-S/Sunnyside-Agency-LandingPage]
+- Live Site URL: [https://luzanne-s.github.io/Sunnyside-Agency-LandingPage/]
 
 
 ### Built with
