@@ -15,8 +15,10 @@ h1,header a, .contact-btn:hover{
 header{
     background-image: url("images/desktop/image-header.jpg");
     background-size: cover;
+    display: block;
+    margin:auto;
     margin-top: -5%;
-    height:790px;
+    height:40rem;
     padding-top: 8%;
     padding-left: 2%;
     padding-right: 2%;
@@ -87,7 +89,7 @@ ul li:hover{
     background-color:hsl(0, 0%, 100%);
     top:90px;
     left:40px;
-    height:300px;
+    height:20rem;
     width:78%;
     border-top: 30px solid #3EBFFF; 
     border-right: 30px solid hsl(0, 0%, 100%);
@@ -117,7 +119,9 @@ h1{
 #transform,#stand-out,#gp-section,.testimonial-row,#images{
     display: flex;
     flex-direction: row;
+    width:100%;
 }
+
 h2{
     font-weight: 700;
     font-size: 38px;
@@ -128,17 +132,31 @@ h2{
 .stand-h2{
     width:500px;
 }
+
 .transform-content{
-    display: block;
-    margin:auto;
-    width:27%;
+    margin-top: 20%;
+   margin-left:10%;
+    width:75%;
+}
+.transform-image{
+    width:90%;
+ 
+}
+.egg-img{
+    width:750px;
+  
 }
 .standout-content{
-    display: block;
-    margin:auto;
-    width:26%;  
+    margin-top: 18%;
+    margin-left: 5%;
+    width:50%;  
 }
-
+.stand-out-image{
+    width:50%;  
+}
+.pink-img{
+    width:48em;
+}
 .transform-p,.stand-p{
     color: hsl(213, 9%, 39%);
     line-height: 1.6;
@@ -187,14 +205,7 @@ h2{
 .learn-btn2:hover:after{
     background: none repeat scroll 0 0  hsl(7, 99%, 70%);
 }
-.pink-img{
-    width:770px;
-    margin-top: -0.5%;
-}
 
-.egg-img{
-    width:750px;
-}
 #gp-section{
 
     margin-top: -2%;   
@@ -249,6 +260,7 @@ h2{
     height:520px;
     margin-top: 10%;
 }
+
 h4,small{
     color:hsl(210, 4%, 67%);
 }
@@ -280,13 +292,13 @@ strong{
 }
 
 .milk,.sugar,.cone,.orange{
-width: 392.5px;
-height:390px;
+width: 25.8%;
 margin-left: -1%;
 }
 
 footer{
     height:270px;
+    width:100%;
     background-color: hsla(168, 60%, 52%, 0.548); 
     margin-top: -1%;
     text-align: center;  
@@ -315,13 +327,13 @@ a .icon:hover path{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:660px) {
     header{
         background-image: url("images/mobile/image-header.jpg");
         background-repeat: no-repeat;
         background-position: center; 
         height:500px;
-        width:375px;
+        width:100%;
         padding-top: 15%;      
     }
     #logo{
@@ -363,32 +375,37 @@ a .icon:hover path{
         width:375px;
     }
     .pink-img,.egg-img{
-        width:372px;
+        width:100%;
+    
     }
     .stand-h2{
-        width:350px;
+        font-size: 30px;
+        width:300px;
         text-align: center;
-        margin-left: -15%;
+
     }
     .transform-h2{
-        width:350px;
+        font-size: 30px;
+        width:300px;
         text-align: center; 
-        margin-left: -10%;
+    
     }
     .transform-content{
         width:80%;
         text-align: center;
+        margin: auto;
     }
     .standout-content{
         width:75%;
         text-align: center;
+        margin: auto;
     }
     .learn-btn1,.learn-btn2{
         margin-bottom: 20%;
         margin-top: 5%;
     }  
     .stand-out-image,.transform-image{
-        width: 372px;
+        width: auto;
     }
     #gp-section,.Photography{
         width:375px;
@@ -427,27 +444,20 @@ a .icon:hover path{
     .images-row{
         display:grid;
         grid-template-columns: auto auto ;
-        width: 375px;
+        width:100%;
         margin-top: 155%;
     }
     .milk,.sugar,.cone,.orange{
-        width: 192px;
-        height:150px;
-        display: block;
-        margin:auto;
-        margin-left:-5%;
+        width: 100%;
+        height:15rem;   
    }
-    .sugar,.orange{
-    margin-left:-5%;
-   }
-    footer{
-    width:375px;
-   }
+    
     .footer-logo{
     padding-top:13%;
     padding-bottom: 10%;
    }
     .social-icons{
-    margin-top: 10%;
+    margin-top: 5%;
    }
 }
+
